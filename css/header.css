@@ -1,0 +1,175 @@
+/* ============= 1, Setting ============= */
+*, ::after, ::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --bg: #2c3e50;
+    --white: #ffffff;
+    --green:#1abc9c;
+}
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.header_ul,.header_li{
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+a{
+    color: #292b2c;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+img {
+    max-width: 100%;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #292b2c;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2
+}
+p {
+    color: #687188;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+.container{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* ============= 1, Setting ============= */
+
+header{
+	border: black;
+	border-width: 2px;
+
+}
+.head_container{
+	padding: 20px;
+	overflow: hidden;
+}
+.logo{
+	float:left;
+	margin-left: 20px;
+}
+.logo img{
+	height: 50px;
+}
+.menu{
+	margin-top:5px;
+	float:right;
+}
+.menu ul{
+	list-style-type: none;
+	    margin-right: -10px;
+}
+.menu li{
+	display: inline;
+}
+.menu a{
+	text-decoration: none;
+	font-weight: 500;
+	color: #1473E6;
+	    padding:10px;
+	    padding-left: 15px;
+	    padding-right: 15px;
+}
+.menu a:hover { 
+	background: rgba(247, 202, 24, 0.0);
+    border-bottom:4px solid#1473E6;
+    transition: 0.1s;
+
+}
+.icon{
+	display: none;
+}
+
+menu.responsive{
+	position: relative;
+}
+menu.responsive{
+	float: none;
+    display: block;
+    text-align: left;
+}
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1140px;
+    }
+}
+@media screen and (max-width: 835px) {
+	.logo img {
+	    height: 40px;
+	}
+	ul > li:first-of-type{
+		display:none;
+	}
+	.menu{
+		margin:0;
+	}
+}
+
+@media screen and (max-width: 690px) {
+
+.menu li{
+	display: none;
+}
+.icon{
+    font-weight: 900 !important;
+        font-size: 27px !important;
+    padding: 0;
+    margin: 0;
+       margin-top: -22px;
+    display: flex;
+}
+	.logo img {
+	    height: 40px;
+	}
+}
+
+.sidenav {
+	height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.2s;
+    padding-top: 87px;
+    z-index: 100;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #1c3664;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #000000;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}

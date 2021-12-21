@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+/* nav{
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: row;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.navbar_link{
+    /* background-color: blue; */
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 100px;
+    top: 0;
+}
+.nav_link_list{
+    /* margin-top: 45px; */
+    list-style-type: none;
+    display: inline;
+    align-items: center;
+    float: right;
+}
+.nav_link_list li{
+
+    display: inline;
+    font-size: 1rem;
+    font-weight: 600;
+    
+}
+/* .nav_link_list a{
+    padding: 45px 25px;
+    text-decoration: none;
+    color: #1473e6;
+} */
+/* .nav_link_list a:hover{
+    margin: 5px auto;
+    padding: 40px 25px;
+    text-decoration: none;
+    color: #1473e6;
+    border-bottom: 5px solid #1473e6;
+} */
+#logo_nav{
+    height: 60px;
+    margin-right: 100px;
+}
+.nav_logo{
+    position: absolute;
+    left: 100px;
+    top: 20px;
+}
+  /* Mobile Nav */
+.navbar_btn img{
+    height: 25px;
+    color: #1473e6 ;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: none;
+}
+.nav_overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+    animation: FadeIn linear 0.2s;
+}
+.nav_mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: white;
+    transform: translateX(-100%);
+    transition: transform linear 0.2s;
+}
+.nav_mobile_close{
+    font-size: 1.5rem;
+    color: violet;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+.navbar_mobile_link{
+    margin: 50px 30px;
+}
+.nav_mobile_link_list a{
+    text-decoration: none;
+    color: #1473e6;
+}
+.nav_mobile_link_list li{
+    margin: 25px;
+    list-style-type: none;
+    font-size: 1.4rem;
+}
+
+#nav_mobile_input:checked ~ .nav_overlay{
+    display: block;
+}
+#nav_mobile_input:checked ~ .nav_mobile{
+    transform: translateX(0);
+}
+
+@media (max-width: 1023px)
+{
+    .navbar_btn img{
+        display: block;
+    }
+    .nav_link_list{
+        display: none;
+    }
+    nav{
+        width: 100%;
+    }
+    #logo_nav{
+        height: 50px;
+    }
+    .nav_logo{
+        left: 25px;
+        top: 20px;
+    }
+}
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+} */
+
+/*------------------------------------------------Nav bar End--------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+
+}
+.swiper_slider_content{
+    width: 100%;
+    height: 100vh;
+    padding: 0 80px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.swiper_img{
+    width: 60%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+.swiper_text{
+    width: 30%;
+    background-color: aqua;
+}
+.swiper_img img{
+    width: 400px;
+    height: 400px;
+}
+
+.ari_pods,
+.beats,
+.apple_watch,
+.galaxy_buds {
+    width: 100%;
+    height: 100vh;
+    padding: 0 80px;
+}
+
+.section_container {
+    width: 90%;
+    height: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: brown; */
+}
+.sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.swiper_btn{
+    height: 50px;
+    width: 150px;
+    margin: 15px auto;
+    border: none;
+    background-color: hsl(34, 78%, 91%,0);
+}
+.swiper_btn a{
+    text-decoration: none;
+    color: #3377ff;
+    font-size: 16px;
+}
+.white_btn a{
+    color: #ffffff;
+}
+.swiper_btn a img{
+    height: 10px;
+}
+.ari_pods {
+    background-color: #1C1C1C;
+}
+
+.beats {
+    background-color: #fff;
+}
+
+.apple_watch {
+    background-color: #3377ff;
+}
+
+.galaxy_buds {
+    background-color: #000;
+}
+
+.image {
+    width: 600px;
+}
+
+.image > img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.text {
+    width: 30%;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-align: left;
+
+}
+
+.text > .title {
+    font-size: 64px; 
+    font-weight: 100;
+    margin-bottom: 50px;
+    line-height: 1.1 ;
+}
+
+.ari_pods > .section_container > .text {
+    color: #fff;
+}
+
+.text > .description {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.beats > .section_container > .image {
+    order: 2;
+    width: 500px;
+}
+
+.beats > .text {
+    color: #000;
+}
+
+/* .galaxy_buds > .section_container > .text > .title {
+    font-size: 45px;
+} */
+
+.galaxy_buds > .section_container > .text > .title > span {
+    font-weight: 500;
+}
+
+.galaxy_buds > .section_container > .text {
+    color: #fff;
+}
+
+.swiper-container-horizontal>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite, 
+.swiper-container-vertical>.swiper-pagination-progressbar {
+    position: absolute;
+    left: 95%;
+    top: 25%;
+    height: 50%;
+}
+@media (max-width: 1023px){
+    .swiper-slide{
+        width: 100%;
+    }
+    .sections{
+        width: 100%;
+    }
+    .section_container{
+        width: 100%;
+        flex-direction: column;
+        font-size: 10px;
+    }
+    .text{
+        width: 100%;
+    }
+    .image{
+        max-width: 300px;
+    }
+    .text > .description {
+        font-size: 12px;
+        font-weight: 100;
+    }
+    .text > .title {
+        font-size: 24px;
+        font-weight: 100;
+        margin-top: 50px;
+    }
+    .swiper-slide{
+        height: 150vh;
+    }
+}
